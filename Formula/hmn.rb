@@ -10,16 +10,16 @@ class Hmn < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/heavymetal-network/hmn-vm/releases/download/v0.1.0/hmn_0.1.0_darwin_amd64.tar.gz"
-      sha256 "5a6731af618a9a376f1c022b5454da873765e157126daf24289f3d2b860fd25c"
+      url "https://github.com/heavymetal-network/hmn-cli-pub/releases/download/v0.1.0/hmn_0.1.0_darwin_amd64.tar.gz"
+      sha256 "150d22c0dee2557b609d83944eebc4ef51018f5fa59230555e51156e6251f4f7"
 
       define_method(:install) do
         bin.install "hmn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/heavymetal-network/hmn-vm/releases/download/v0.1.0/hmn_0.1.0_darwin_arm64.tar.gz"
-      sha256 "ff88c29c35810dff8bf9e16454f91fb64446f382f5bc505b7a2552bd4ab3ad57"
+      url "https://github.com/heavymetal-network/hmn-cli-pub/releases/download/v0.1.0/hmn_0.1.0_darwin_arm64.tar.gz"
+      sha256 "cca759761e88089f82b0f001526b6bb24a1763cc39b66189d1901514e2e68b0b"
 
       define_method(:install) do
         bin.install "hmn"
@@ -29,15 +29,15 @@ class Hmn < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/heavymetal-network/hmn-vm/releases/download/v0.1.0/hmn_0.1.0_linux_amd64.tar.gz"
-      sha256 "4ae3f1c2812979218f6ffca3c9028ca0409f885fcdfd483de9e8d6c1324fee2f"
+      url "https://github.com/heavymetal-network/hmn-cli-pub/releases/download/v0.1.0/hmn_0.1.0_linux_amd64.tar.gz"
+      sha256 "93633409fce6a279d974aa5ca2c3cbeb00d50686ebd891ff9c71efc339dd3a42"
       define_method(:install) do
         bin.install "hmn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/heavymetal-network/hmn-vm/releases/download/v0.1.0/hmn_0.1.0_linux_arm64.tar.gz"
-      sha256 "0d5d368317b61528384508f9ebb7d7119e62cc5b28c90d584b06c7501f4fed58"
+      url "https://github.com/heavymetal-network/hmn-cli-pub/releases/download/v0.1.0/hmn_0.1.0_linux_arm64.tar.gz"
+      sha256 "c2507d6e11bf83aa833e04bf731fc0c5ae72a6aa879c4134fc4422788851041d"
       define_method(:install) do
         bin.install "hmn"
       end

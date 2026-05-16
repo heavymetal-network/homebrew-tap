@@ -11,7 +11,7 @@ class Hmn < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/heavymetal-network/hmn-cli-pub/releases/download/v0.2.0/hmn_0.2.0_darwin_amd64.tar.gz"
-      sha256 "a42f5770573603abac4c5de01bee66a94214f398b5255267b566c086ed176787"
+      sha256 "c5bea6517d7ee8da5319c29f6769c589f0d73173cf1884e6b65637bc86b67084"
 
       define_method(:install) do
         bin.install "hmn"
@@ -19,7 +19,7 @@ class Hmn < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/heavymetal-network/hmn-cli-pub/releases/download/v0.2.0/hmn_0.2.0_darwin_arm64.tar.gz"
-      sha256 "2c9c017b1497767b85adc70b2748cfe16383e0df4e9fd5e8458f6070f8791b3d"
+      sha256 "e3a2469022dc809083f7cde375d31d81c408b8ae240bacbab232de53d7f5c085"
 
       define_method(:install) do
         bin.install "hmn"
@@ -30,14 +30,14 @@ class Hmn < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/heavymetal-network/hmn-cli-pub/releases/download/v0.2.0/hmn_0.2.0_linux_amd64.tar.gz"
-      sha256 "5a36f0b397e549e767ff7885b588cdae73c2d1aa70259afee5ea639988112994"
+      sha256 "ea15714e706b6b00e4b3ef1de62bf790ff0ec7230d8d749f44e274e5eb6003e1"
       define_method(:install) do
         bin.install "hmn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/heavymetal-network/hmn-cli-pub/releases/download/v0.2.0/hmn_0.2.0_linux_arm64.tar.gz"
-      sha256 "0202464baa86f331bd84b438be33bd4bc9a60b86d5f048ae1411e843bf462d4f"
+      sha256 "fae3962177a1bbd424c5341e9c13ed323d8bb67dc67abe41f323a431e675a2d1"
       define_method(:install) do
         bin.install "hmn"
       end

@@ -5,21 +5,21 @@
 class Hmn < Formula
   desc "HeavyMetal Network provider node CLI"
   homepage "https://heavymetal.network"
-  version "0.16.17"
+  version "0.16.18"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/heavymetal-network/hmn-cli-pub/releases/download/v0.16.17/hmn_0.16.17_darwin_amd64.tar.gz"
-      sha256 "c8c00316194f1264b278f3dc692f7ede54fa7c7faa4e01a60e9fc378afdc2efa"
+      url "https://github.com/heavymetal-network/hmn-cli-pub/releases/download/v0.16.18/hmn_0.16.18_darwin_amd64.tar.gz"
+      sha256 "a24eedf0e4e8ef06723d6cc8f0c75800636c22eb3784089d9eb93c84b169aae3"
 
       define_method(:install) do
         bin.install "hmn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/heavymetal-network/hmn-cli-pub/releases/download/v0.16.17/hmn_0.16.17_darwin_arm64.tar.gz"
-      sha256 "9c6dde880253f6c46bb6c252e6c3a70a8b0e0acf286c611c7d22a2271ffb5293"
+      url "https://github.com/heavymetal-network/hmn-cli-pub/releases/download/v0.16.18/hmn_0.16.18_darwin_arm64.tar.gz"
+      sha256 "b0baa7e8bfa58f2cc64a1ad2b092e1ffe58ef425809df60b72c062dc16130f73"
 
       define_method(:install) do
         bin.install "hmn"
@@ -29,15 +29,15 @@ class Hmn < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/heavymetal-network/hmn-cli-pub/releases/download/v0.16.17/hmn_0.16.17_linux_amd64.tar.gz"
-      sha256 "4838f5dd60034b0ec46601609638f93c2688e1ef4056dc75952b6046e34ca21c"
+      url "https://github.com/heavymetal-network/hmn-cli-pub/releases/download/v0.16.18/hmn_0.16.18_linux_amd64.tar.gz"
+      sha256 "7aee52db5c33ef0a266e205b19650e13014ec05129af5655b466d94d992e8db0"
       define_method(:install) do
         bin.install "hmn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/heavymetal-network/hmn-cli-pub/releases/download/v0.16.17/hmn_0.16.17_linux_arm64.tar.gz"
-      sha256 "34090548c08aa54c6a1a1a1b0d32b8b386ddf86b6b378084828d8dc204b60256"
+      url "https://github.com/heavymetal-network/hmn-cli-pub/releases/download/v0.16.18/hmn_0.16.18_linux_arm64.tar.gz"
+      sha256 "34210490790798371eb4b1690ecb01bd637b4f6678f88bbb64f3c72cd93bc796"
       define_method(:install) do
         bin.install "hmn"
       end

@@ -7,13 +7,13 @@
 class Hmn < Formula
   desc "HeavyMetal Network provider node CLI"
   homepage "https://heavymetal.network"
-  version "0.17.6"
+  version "0.17.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/heavymetal-network/hmn-cli-pub/releases/download/v0.17.6/hmn-darwin-arm64"
-      sha256 "80d829d167627ad6bd7264060f6e454e05523a0fd55253483fa36711b4ea5e5c"
+      url "https://github.com/heavymetal-network/hmn-cli-pub/releases/download/v0.17.7/hmn-darwin-arm64"
+      sha256 "b99a13430501e9b9e6f4e5cc4884b489d1dacaa4c886d41aa3b137a56d4ea320"
 
       define_method(:install) do
         bin.install "hmn-darwin-arm64" => "hmn"
